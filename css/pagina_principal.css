@@ -1,3 +1,7 @@
 .bg-informacion {
     background-color: brown;
 }
+
+.margenCustomTop{
+    padding-top: 9px;
+}

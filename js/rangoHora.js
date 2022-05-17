@@ -1,0 +1,1 @@
+document.getElementById("horaMenor").value = document.getElementById("rango1").value
