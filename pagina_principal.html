@@ -11,6 +11,11 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="css/pagina_principal.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+  <script src="js/rangoHora.js"></script>
+
   <title>Cines Loquesea</title>
 </head>
 
@@ -44,14 +49,13 @@
       </div>
       <div class="col-3 text-center align-self-start"></div>
       <div class="col-3 bg-black bg-opacity-25 text-center margenCustomTop">
-        <font size="5">Horario:</font>
-        <font size="4"><input type="time" id="horaMenor" size="3"/></font>
-        <font size="5">-</font>
-        <font size="4"><input type="time" id="horaMayor" size="3"/></font>
+        <p>
+          <label for="amount"> <font size="5" >Horario: </font></label>
+          <input type="text" id="amount" size="8" readonly style="border:0; font-weight:bold;  text-align: center">
+        </p>
       </div>
-      <div class="col-3">
-        <input type="range" class="form-range" id="rango1">
-        <input type="range" class="form-range" id="rango2">
+      <div class="col-3 slider-range">
+        <div id="slider-range"></div>
       </div>
     </div>
     <div class="row">
