@@ -22,9 +22,9 @@
 <body>
 
   <header class="p-3 bg-black bg-opacity-25">
-    <div class="container-lg d-grid gap-3">
+    <div class="container-flex d-grid gap-3 mainContent">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-auto me-md-auto text-dark text-decoration-none">
           <img class="bi me-2" src="images/logo.svg" width="40" height="32"></img>
           <span class="fs-4 ">Cartelera</span>
         </a>
@@ -36,30 +36,144 @@
     </div>
   </header>
 
-  <div class="container p-5">
+  <div class="container p-5" id="mainContent">
     <div class="row">
-      <div class="col-3 border bg-black bg-opacity-25 text-center margenCustomTop">
+      <div class="col-3 border bg-black bg-opacity-25 text-center autoTamano">
 
-        <label for="fecha">
-          <font size="5" >Sesión: </font>
-        </label>
-
-        <input type="date" id="fecha" name="fecha" value="2022-01-01" min="2022-01-01" max="2022-12-31">
+        <label for="fecha"><font style="font-size: 1vw; font-weight:bold;" >Sesión:</font> </label>
+        <input type="date" style="font-weight:bold; font-size: 1vw;" id="fecha" name="fecha" value="2022-01-01" min="2022-01-01" max="2022-12-31">
+        <span><button id="goToDate">-></button></span>
 
       </div>
       <div class="col-3 text-center align-self-start"></div>
-      <div class="col-3 bg-black bg-opacity-25 text-center margenCustomTop">
+      <div class="col-3 bg-black bg-opacity-25 text-center autoTamano">
         <p>
-          <label for="amount"> <font size="5" >Horario: </font></label>
-          <input type="text" id="amount" size="8" readonly style="border:0; font-weight:bold;  text-align: center">
+          <label for="amount">
+            <font style="font-weight:bold; font-size: 1vw;">Horario: </font>
+          </label>
+          <input type="text" id="amount" size="8" readonly style="border:0; font-size: 1vw; font-weight:bold;  text-align: center">
         </p>
       </div>
       <div class="col-3 slider-range">
         <div id="slider-range"></div>
       </div>
     </div>
-    <div class="row">
-
+    <div class="row" id="contenedorPeliculas">
+      <div class="container bg-black bg-opacity-25 p-3">
+            <ul class="list-group-horizontal-xxl d-flex flex-wrap">
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              <li class="list-group-item carta d-flex">  
+                <input type="image" class="imagen" src="images/Shrek.jpg">
+                <div class="container informacion">
+                  <h1>Shrek</h1>
+                  <p>
+                    Duración: 1h 30 min <br>
+                    2D Español<br>
+                    <b>Horarios:</b><br>
+                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                      <button class="list-group-item bHora">09:00</button>
+                      <button class="list-group-item bHora">15:15</button>
+                      <button class="list-group-item bHora">18:45</button>
+                      <button class="list-group-item bHora">22:30</button>
+                      <button class="list-group-item bHora">22:30</button>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+        </div>
+      </div>
+      
     </div>
 
   </div>
