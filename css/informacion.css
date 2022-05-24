@@ -1,0 +1,70 @@
+.carta {
+    background-color: plum;
+    min-width: 47%;
+    max-height: 480px;
+    margin: 1%;
+}
+
+.autoTamano {
+    padding-top: 1%;
+    vertical-align: middle;
+}
+
+.informacion {
+    background-color: lightsalmon;
+    padding: 2%;
+    max-width: 75%;
+}
+
+.slider-range {
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+#contenedorPeliculas {
+    padding: 2%;
+    min-width: 800px;
+}
+
+.imagen {
+    max-width: 25%;
+    min-width: 25%;
+    max-height: 480px;
+    min-width: 150px;
+    padding-right: 2%;
+}
+
+#fecha {
+    padding-left: 5px;
+}
+
+#mainContent {
+    max-width: 1920px;
+    min-width: 800px;
+}
+
+.horarios {
+    margin-left: 0%;
+}
+
+.bHora {
+    background-color: #bfbfbf;
+    font-size: 0.8vw;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 0%;
+}
+
+body {
+    min-width: 700px;
+}
+
+p {
+    font-size: 15pt;
+}
+
+#goToDate{
+    vertical-align: middle;
+    font-size: 1vw;
+    margin-bottom: 1%;
+}
