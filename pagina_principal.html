@@ -38,20 +38,22 @@
 
   <div class="container p-5" id="mainContent">
     <div class="row">
-      <div class="col-3 border bg-black bg-opacity-25 text-center autoTamano">
+      <div class="col-4 border bg-black bg-opacity-25 text-center selector flex-nowrap">
 
-        <label for="fecha"><font style="font-size: 1vw; font-weight:bold;" >Sesión:</font> </label>
-        <input type="date" style="font-weight:bold; font-size: 1vw;" id="fecha" name="fecha" value="2022-01-01" min="2022-01-01" max="2022-12-31">
-        <span><button id="goToDate">-></button></span>
+        <label class="textoSelector" for="fecha">Sesión:</label>
+        <span>
+          <input class="textoSelector" type="date" id="fecha" value="2022-01-01" min="2022-01-01" max="2022-12-31">
+          <button class="textoSelector">-></button>
+        </span>
 
       </div>
-      <div class="col-3 text-center align-self-start"></div>
-      <div class="col-3 bg-black bg-opacity-25 text-center autoTamano">
+      <div class="col-2 text-center align-self-start"></div>
+      <div class="col-3 bg-black bg-opacity-25 text-center selector">
         <p>
-          <label for="amount">
-            <font style="font-weight:bold; font-size: 1vw;">Horario: </font>
+          <label class="textoSelector" for="amount">
+            Horario:
           </label>
-          <input type="text" id="amount" size="8" readonly style="border:0; font-size: 1vw; font-weight:bold;  text-align: center">
+          <input type="text" id="amount" size="8" readonly>
         </p>
       </div>
       <div class="col-3 slider-range">
@@ -60,121 +62,121 @@
     </div>
     <div class="row" id="contenedorPeliculas">
       <div class="container bg-black bg-opacity-25 p-3">
-            <ul class="list-group-horizontal-xxl d-flex flex-wrap">
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              <li class="list-group-item carta d-flex">  
-                <input type="image" class="imagen" src="images/Shrek.jpg">
-                <div class="container informacion">
-                  <h1>Shrek</h1>
-                  <p>
-                    Duración: 1h 30 min <br>
-                    2D Español<br>
-                    <b>Horarios:</b><br>
-                    <ul class="list-group-horizontal d-flex flex-wrap horarios">
-                      <button class="list-group-item bHora">09:00</button>
-                      <button class="list-group-item bHora">15:15</button>
-                      <button class="list-group-item bHora">18:45</button>
-                      <button class="list-group-item bHora">22:30</button>
-                      <button class="list-group-item bHora">22:30</button>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-              
-            </ul>
-        </div>
+        <ul class="list-group-horizontal-xxl d-flex flex-wrap">
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/Shrek.jpg">
+            <div class="container informacion">
+              <h1>Shrek</h1>
+              <p>
+                Duración: 1h 30 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/batmanvssuperman.jpg">
+            <div class="container informacion">
+              <h1>Batman VS Superman</h1>
+              <p>
+                Duración: 2h 31 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/killbill.jpg">
+            <div class="container informacion">
+              <h1>Kill Bill</h1>
+              <p>
+                Duración: 1h 51 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/knivesOutjpg.jpg">
+            <div class="container informacion">
+              <h1>Puñales por la espalda </h1>
+              <p>
+                Duración: 2h 10 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/taxidriver.jpg">
+            <div class="container informacion">
+              <h1>Taki Driver</h1>
+              <p>
+                Duración: 1h 54 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+          <li class="list-group-item carta d-flex">
+            <input type="image" class="imagen" src="images/viento.jpg">
+            <div class="container informacion">
+              <h1>Lo que el viento se llevó</h1>
+              <p>
+                Duración: 3h 58 min <br>
+                2D Español<br>
+                <b>Horarios:</b><br>
+              <ul class="list-group-horizontal d-flex flex-wrap horarios">
+                <button class="list-group-item bHora">09:00</button>
+                <button class="list-group-item bHora">15:15</button>
+                <button class="list-group-item bHora">18:45</button>
+                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora">22:30</button>
+              </ul>
+              </p>
+            </div>
+          </li>
+
+        </ul>
       </div>
-      
     </div>
+
+  </div>
 
   </div>
 
