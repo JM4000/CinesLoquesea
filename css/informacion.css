@@ -27,8 +27,8 @@
 }
 
 .imagen {
-    max-width: 25%;
-    min-width: 25%;
+    max-width: 45%;
+    min-width: 35%;
     max-height: 480px;
     min-width: 150px;
     padding-right: 2%;
@@ -61,6 +61,11 @@ body {
 
 p {
     font-size: 15pt;
+    text-align: center;
+}
+
+h1{
+    margin-left: 10%;
 }
 
 #goToDate{
