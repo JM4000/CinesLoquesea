@@ -36,8 +36,14 @@
     </div>
   </header>
 
-
-
+  <!--https://stackoverflow.com/questions/49559669/how-to-use-url-parameters-in-html-->
+  <input hidden="true" id="pelicula" value="">
+  <script>
+    var url_string = window.location.href; //window.location.href
+    var url = new URL(url_string);
+    var c = url.searchParams.get("pelicula");
+    document.getElementById("pelicula").value = c;
+  </script>
 
 
   <div class="container-fluid p-5">
