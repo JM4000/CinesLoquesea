@@ -34,71 +34,70 @@
 
     <div class="container p-5">
         <div class="row">
-            <ul class="list-group-horizontal d-flex flex-wrap">
-                <li class="list-group-item" id="info">
-                    Película: Sample Text <br>
-                    Hora: 00:00 <br>
-                    Fecha: XX/XX/XXX <br>
-                    Sala XX
-                </li>
-                <li class="list-group-item d-inline-flex" id="contadorEntradas">
-                    <div class="col-6">
-                        Seleccione sus entradas: <br><br>
-                        &emsp;&emsp;&emsp;&emsp;Adulto:<br>
-                        &emsp;&emsp;&emsp;&emsp; Niño:<br>
-                        &emsp;&emsp;Adulto + Menú:<br>
-                    </div>
-                    <div class="col-6">
-                        <br>
-                        &nbsp;&nbsp;&nbsp;Cantidad: &emsp;&emsp;Precio: &emsp;&emsp;Subtotal: <br>
-                        <input type="image" src="images/arrow-left-circle.svg" name="leftOne" id="leftOne"
-                            onclick="less(1)" />
-                        <input class="cant" type="number" value="0" id="cantOne" disabled />
-                        <input type="image" src="images/arrow-right-circle.svg" name="rightOne" id="rightOne"
-                            onclick="more(1)" />
-                        &emsp;&emsp;&nbsp;8&euro;
-                        &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
-                            style="text-align: center;" id="precioOne" disabled /> &euro;
-                        <br>
+            <div class="col-xl-2 col-6-sm" id="info">
+                Película: Sample Text <br>
+                Hora: 00:00 <br>
+                Fecha: XX/XX/XXX <br>
+                Sala XX
+            </div>
+            <div class="container d-flex col-lg-8 col-sm-12" id="contadorEntradas">
+                <div class="col-4">
+                    Seleccione sus entradas: <br><br>
+                    &emsp;&emsp;&emsp;&emsp;Adulto:<br>
+                    &emsp;&emsp;&emsp;&emsp; Niño:<br>
+                    &emsp;&emsp;Adulto + Menú:<br>
+                </div>
+                <div class="col-8">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;Cantidad: &emsp;&emsp;Precio: &emsp;&emsp;Subtotal: <br>
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftOne" id="leftOne"
+                        onclick="less(1)" />
+                    <input class="cant" type="number" value="0" id="cantOne" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rightOne" id="rightOne"
+                        onclick="more(1)" />
+                    &emsp;&emsp;&nbsp;8&euro;
+                    &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
+                        style="text-align: center;" id="precioOne" disabled /> &euro;
+                    <br>
 
-                        <input type="image" src="images/arrow-left-circle.svg" name="leftTwo" id="leftTwo"
-                            onclick="less(2)" />
-                        <input class="cant" type="number" size="1" value="0" id="cantTwo" disabled />
-                        <input type="image" src="images/arrow-right-circle.svg" name="rigthTwo" id="rigthTwo"
-                            onclick="more(2)" />
-                        &emsp;&emsp;&nbsp;6&euro;
-                        &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
-                            style="text-align: center;" id="precioTwo" disabled /> &euro;
-                        <br>
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftTwo" id="leftTwo"
+                        onclick="less(2)" />
+                    <input class="cant" type="number" size="1" value="0" id="cantTwo" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rigthTwo" id="rigthTwo"
+                        onclick="more(2)" />
+                    &emsp;&emsp;&nbsp;6&euro;
+                    &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
+                        style="text-align: center;" id="precioTwo" disabled /> &euro;
+                    <br>
 
-                        <input type="image" src="images/arrow-left-circle.svg" name="leftThree" id="leftThree"
-                            onclick="less(3)" />
-                        <input class="cant" type="number" value="0" id="cantThree" disabled />
-                        <input type="image" src="images/arrow-right-circle.svg" name="rightThree" id="rightThree"
-                            onclick="more(3)" />
-                        &emsp;&emsp;15&euro;
-                        &emsp;&emsp;&emsp;<input class="precio" type="number" value="0" style="text-align: center;"
-                            id="precioThree" disabled /> &euro;
-                        <br>
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftThree" id="leftThree"
+                        onclick="less(3)" />
+                    <input class="cant" type="number" value="0" id="cantThree" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rightThree" id="rightThree"
+                        onclick="more(3)" />
+                    &emsp;&emsp;15&euro;
+                    &emsp;&emsp;&emsp;<input class="precio" type="number" value="0" style="text-align: center;"
+                        id="precioThree" disabled /> &euro;
+                    <br>
+                </div>
+            </div>
+            <div class="list-group-item bg-black bg-opacity-25 col-lg-2 col-sm-4" id="pagoContainer">
+                <div class="row" id="plum">
+                    <div style="font-size: x-large">
+                        Total:
                     </div>
-                </li>
-                <li class="list-group-item bg-black bg-opacity-25" id="pagoContainer">
-                    <div class="row" id="plum">
-                        <div style="font-size: x-large">
-                            Total:
-                        </div>
+                </div>
+                <div class="row" style="font-size: 30px;">
+                    <div id="ratio">
+                        <input id="pTotal" type="number" value="0" disabled />
+                        &euro;
                     </div>
-                    <div class="row" style="font-size: 30px;">
-                        <div id="ratio">
-                            <input id="pTotal"type="number" value="0" disabled />
-                            &euro;
-                        </div>
-                    </div>
-                    <div class="row" style="font-size: 30px;">
-                        <button id="pagar">Pagar</button>
-                    </div>
-                </li>
-            </ul>
+                </div>
+                <div class="row" style="font-size: 30px;">
+                    <button id="pagar">Pagar</button>
+                </div>
+            </div>
+
         </div>
         <div class="row"></div>
     </div>

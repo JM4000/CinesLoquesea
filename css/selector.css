@@ -1,5 +1,4 @@
 #info {
-    max-width: 20%;
     border-left: 5px;
     border-top: none;
     border-bottom: none;
@@ -7,13 +6,7 @@
 }
 
 #contadorEntradas {
-    max-width: 60%;
-    min-width: 50%;
     border: none;
-}
-
-#pagoContainer{
-    max-width: 250px;
 }
 
 #plum{
@@ -28,7 +21,7 @@
 }
 #pTotal{
     text-align: center;
-    width: 180px;
+    width: 85%;
 }
 
 #ratio{
