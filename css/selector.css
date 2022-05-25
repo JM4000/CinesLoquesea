@@ -1,5 +1,6 @@
 .mainContent {
     min-width: 500px;
+    max-width: 1920px;
 }
 
 #contadorEntradas {
