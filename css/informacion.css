@@ -1,5 +1,5 @@
 .carta {
-    background-color: plum;
+    background-color:  lightsalmon;
     min-width: 47%;
     max-height: 480px;
     margin: 1%;
@@ -8,7 +8,20 @@
 .autoTamano {
     padding-top: 1%;
     vertical-align: middle;
+    margin-left: 6%;
+    background-color:  plum;
+    max-width:70%;
 }
+
+.autoTamano2 {
+    padding-top: 3%;
+   
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color:  plum;
+    max-width:90%;
+}
+
 
 .informacion {
     background-color: lightsalmon;
@@ -27,11 +40,12 @@
 }
 
 .imagen {
-    max-width: 45%;
-    min-width: 35%;
-    max-height: 480px;
-    min-width: 150px;
-    padding-right: 2%;
+    max-width: 75%;
+    min-width: 55%;
+    max-height: 530px;
+    min-width: 250px;
+   
+    padding-left: 20%;
 }
 
 #fecha {
@@ -44,12 +58,11 @@
 }
 
 .horarios {
-    margin-left: 0%;
+    margin-left: -2%;
 }
 
 .bHora {
     background-color: #bfbfbf;
-    font-size: 0.8vw;
     font-weight: bold;
     text-align: center;
     margin-right: 0%;
@@ -65,11 +78,25 @@ p {
 }
 
 h1{
-    margin-left: 10%;
+    margin-left: 40%;
+}
+h2{
+    text-align: center;
 }
 
 #goToDate{
-    vertical-align: middle;
-    font-size: 1vw;
     margin-bottom: 1%;
 }
+
+.tamanyopequenyo{
+    font-size: 13px;
+    margin-left: 5%;
+}
+
+.informacion2 {
+    background-color: lightsalmon;
+    padding: 2%;
+    max-width: 75%;
+ 
+}
+
