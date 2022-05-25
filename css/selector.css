@@ -1,3 +1,8 @@
+#mainContent {
+    max-width: 1920px;
+    min-width: 400px;
+}
+
 #info {
     border-left: 5px;
     border-top: none;
@@ -23,6 +28,14 @@
     text-align: center;
     width: 85%;
 }
+
+#selector{
+    overflow: scroll;
+    background-color: lightgray;
+    max-height: 20cm;
+    min-width: 35cm;
+}
+
 
 #ratio{
    min-height: 100px;
