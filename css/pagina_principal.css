@@ -5,8 +5,8 @@
     width: 47%;
 }
 
-@media screen and (max-width: 1080px){
-    .carta{
+@media screen and (max-width: 1080px) {
+    .carta {
         min-width: 98%;
     }
 }
@@ -24,7 +24,7 @@
 
 #contenedorPeliculas {
     padding: 2%;
-    min-width: 800px;
+    min-width: 400px;
 }
 
 .imagen {
@@ -46,11 +46,7 @@
 
 #mainContent {
     max-width: 1920px;
-    min-width: 800px;
-}
-
-.horarios {
-    margin-left: -5%;
+    min-width: 400px;
 }
 
 .bHora {
@@ -64,21 +60,17 @@
     margin-right: 2%;
 }
 
-body {
-    min-width: 700px;
-}
-
 p {
     font-size: 15pt;
 }
 
-.selector{
+.selector {
     vertical-align: middle;
     margin-bottom: 1%;
     padding-top: 1%;
 }
 
-.textoSelector{
+.textoSelector {
     font-weight: bold;
     font-size: x-large;
 }

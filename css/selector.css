@@ -1,0 +1,40 @@
+#info {
+    border-left: 5px;
+    border-top: none;
+    border-bottom: none;
+    border-color: gray;
+}
+
+#contadorEntradas {
+    border: none;
+}
+
+#plum{
+    background-color: plum;
+    max-width: 110%;
+    text-align: center;
+}
+#pagar{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+#pTotal{
+    text-align: center;
+    width: 85%;
+}
+
+#ratio{
+   min-height: 100px;
+   margin-top: 10%;
+}
+
+.cant[type=number]{
+    width: 50px;
+    text-align: center;
+} 
+
+.precio[type=number]{
+    width: 50px;
+    text-align: center;
+} 

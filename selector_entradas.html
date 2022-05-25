@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/selector.css" rel="stylesheet">
+    <script src="js/controlBotones.js"></script>
+
+    <title>Cines Loquesea</title>
+</head>
+
+<body>
+
+    <header class="p-3 bg-black bg-opacity-25">
+        <div class="container-flex d-grid gap-3 mainContent">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-auto me-md-auto text-dark text-decoration-none">
+                    <img class="bi me-2" src="images/logo.svg" alt="logo de la página" width="40" height="32"></img>
+                    <span class="fs-4 ">Cartelera</span>
+                </a>
+
+                <div>
+                    Bienvenido a cines Loquesea
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-xl-2 col-6-sm" id="info">
+                Película: Sample Text <br>
+                Hora: 00:00 <br>
+                Fecha: XX/XX/XXX <br>
+                Sala XX
+            </div>
+            <div class="container d-flex col-lg-8 col-sm-12" id="contadorEntradas">
+                <div class="col-4">
+                    Seleccione sus entradas: <br><br>
+                    &emsp;&emsp;&emsp;&emsp;Adulto:<br>
+                    &emsp;&emsp;&emsp;&emsp; Niño:<br>
+                    &emsp;&emsp;Adulto + Menú:<br>
+                </div>
+                <div class="col-8">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;Cantidad: &emsp;&emsp;Precio: &emsp;&emsp;Subtotal: <br>
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftOne" id="leftOne"
+                        onclick="less(1)" />
+                    <input class="cant" type="number" value="0" id="cantOne" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rightOne" id="rightOne"
+                        onclick="more(1)" />
+                    &emsp;&emsp;&nbsp;8&euro;
+                    &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
+                        style="text-align: center;" id="precioOne" disabled /> &euro;
+                    <br>
+
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftTwo" id="leftTwo"
+                        onclick="less(2)" />
+                    <input class="cant" type="number" size="1" value="0" id="cantTwo" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rigthTwo" id="rigthTwo"
+                        onclick="more(2)" />
+                    &emsp;&emsp;&nbsp;6&euro;
+                    &emsp;&emsp;&emsp;&nbsp;<input class="precio" type="number" size="1" value="0"
+                        style="text-align: center;" id="precioTwo" disabled /> &euro;
+                    <br>
+
+                    <input type="image" src="images/arrow-left-circle.svg" name="leftThree" id="leftThree"
+                        onclick="less(3)" />
+                    <input class="cant" type="number" value="0" id="cantThree" disabled />
+                    <input type="image" src="images/arrow-right-circle.svg" name="rightThree" id="rightThree"
+                        onclick="more(3)" />
+                    &emsp;&emsp;15&euro;
+                    &emsp;&emsp;&emsp;<input class="precio" type="number" value="0" style="text-align: center;"
+                        id="precioThree" disabled /> &euro;
+                    <br>
+                </div>
+            </div>
+            <div class="list-group-item bg-black bg-opacity-25 col-lg-2 col-sm-4" id="pagoContainer">
+                <div class="row" id="plum">
+                    <div style="font-size: x-large">
+                        Total:
+                    </div>
+                </div>
+                <div class="row" style="font-size: 30px;">
+                    <div id="ratio">
+                        <input id="pTotal" type="number" value="0" disabled />
+                        &euro;
+                    </div>
+                </div>
+                <div class="row" style="font-size: 30px;">
+                    <button id="pagar">Pagar</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,9 +1,9 @@
 $( function() {
     $( "#slider-range" ).slider({
       range: true,
-      min: 32400000,
-      max: 86400000,
-      values: [ 32400000, 86400000 ],
+      min: 540,
+      max: 1440,
+      values: [ 540, 1440 ],
       slide: function( event, ui ) {
         $( "#amount" ).val( convertMsToHM((ui.values[ 0 ])) + " - " + convertMsToHM((ui.values[ 1 ])));
       }
@@ -16,14 +16,8 @@ $( function() {
     return num.toString().padStart(2, '0');
   }
   
-  function convertMsToHM(milliseconds) {
-    let seconds = Math.floor(milliseconds / 1000);
-    let minutes = Math.floor(seconds / 60);
+  function convertMsToHM(minutes) {
     let hours = Math.floor(minutes / 60);
-  
-    seconds = seconds % 60;
-    
-    minutes = seconds >= 30 ? minutes + 1 : minutes;
   
     minutes = minutes % 60;
     hours = hours % 24;
