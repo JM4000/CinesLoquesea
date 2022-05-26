@@ -11,7 +11,7 @@ $(function () {
   });
   $("#amount").val(convertMsToHM($("#slider-range").slider("values", 0)) +
     " - " + convertMsToHM($("#slider-range").slider("values", 1)));
-    filter();
+  filter();
 });
 
 function padTo2Digits(num) {
@@ -36,20 +36,72 @@ function filter() {
   const collection = document.getElementsByClassName("bHora");
   var a;
 
-  Array.from(collection).forEach((element) =>{
+  Array.from(collection).forEach((element) => {
     a = parseInt((element.textContent || element.innerText).substring(0, 2)) * 60 + parseInt((element.textContent || element.innerText).substring(3, 5));
-    if(!rango(a, lower, upper)){
+    if (!rango(a, lower, upper)) {
       element.style.display = "none";
-    } else{
+    } else {
       element.style.display = "block";
     }
   });
 }
 
-function rango(num, low, high){
-  if(low <= num && high >= num){
+function rango(num, low, high) {
+  if (low <= num && high >= num) {
     return true;
-  }else{
+  } else {
     return false;
+  }
+}
+
+function press() {
+  if (document.getElementById("flexSwitchCheckDefault").checked) {
+    document.getElementById("flexSwitchCheckDefault").checked = false;
+  } else {
+    document.getElementById("flexSwitchCheckDefault").checked = true;
+  }
+  cambioDeModo();
+}
+
+function cambioDeModo() {
+  if (document.getElementById("flexSwitchCheckDefault").checked) {
+    const cartas = document.getElementsByClassName("carta");
+    const informaciones = document.getElementsByClassName("informacion");
+    const fondos = document.getElementsByClassName("fondo");
+    const botones = document.getElementsByClassName("bHora");
+
+    Array.from(cartas).forEach((element) => {
+      element.style.backgroundColor = "#145c9e";
+    });
+    Array.from(informaciones).forEach((element) => {
+      element.style.backgroundColor = "#eff9f0";
+    });
+    Array.from(fondos).forEach((element) => {
+      element.style.backgroundColor = "#fdd189";
+    });
+    Array.from(botones).forEach((element) => {
+      element.style.backgroundColor = "#000000";
+      element.style.color = "#ffffff";
+    });
+  }
+  else {
+    const cartas = document.getElementsByClassName("carta");
+    const informaciones = document.getElementsByClassName("informacion");
+    const fondos = document.getElementsByClassName("fondo");
+    const botones = document.getElementsByClassName("bHora");
+
+    Array.from(cartas).forEach((element) => {
+      element.style.backgroundColor = "#3B339B";
+    });
+    Array.from(informaciones).forEach((element) => {
+      element.style.backgroundColor = "#F0A6BB";
+    });
+    Array.from(fondos).forEach((element) => {
+      element.style.backgroundColor = "lightgray";
+    });
+    Array.from(botones).forEach((element) => {
+      element.style.backgroundColor = "lightgray";
+      element.style.color = "#000000";
+    });
   }
 }
