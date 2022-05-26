@@ -129,6 +129,6 @@ function closeForm() {
 function comprar(){
     closeForm();
     alert("Gracias por su compra");
-    window.location.href = './pagina_principal.html';
+    window.location.href = './index.html';
 }
 
