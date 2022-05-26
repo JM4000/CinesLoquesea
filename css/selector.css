@@ -1,8 +1,6 @@
-#info {
-    border-left: 5px;
-    border-top: none;
-    border-bottom: none;
-    border-color: gray;
+.mainContent {
+    min-width: 500px;
+    max-width: 1920px;
 }
 
 #contadorEntradas {
@@ -24,6 +22,20 @@
     width: 85%;
 }
 
+#selector{
+    background-color: lightgray;
+    height: 25cm;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#contenido{
+    height: 20cm;
+    min-width: 30cm;
+}
+
+
 #ratio{
    min-height: 100px;
    margin-top: 10%;
@@ -38,3 +50,29 @@
     width: 50px;
     text-align: center;
 } 
+
+#popUp{
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, 5%);
+    border: 3px solid black;
+    background-color: lightsalmon;
+    z-index: 9;
+}
+
+#background{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: none;
+    height: 100%;
+    width: 100vw;
+    background-color: lightgrey;
+    opacity: 0.4;
+}
+
+.butaca{
+    vertical-align: middle;
+}
