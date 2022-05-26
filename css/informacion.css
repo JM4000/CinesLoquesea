@@ -15,7 +15,6 @@
 
 .autoTamano2 {
     padding-top: 3%;
-   
     margin-left: 6%;
     margin-right: 6%;
     background-color:  plum;
@@ -100,3 +99,12 @@ h2{
  
 }
 
+.tamBackground{
+    max-width:200%;
+    min-width: 50%;
+  
+}
+.maxw{
+    max-width:500%;
+    max-height: 500%;
+}

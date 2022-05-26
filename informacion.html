@@ -15,6 +15,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
   <script src="js/rangoHora.js"></script>
+  <script src="js/leerMas.js"></script>
 
   <title>Cines Loquesea</title>
 </head>
@@ -40,7 +41,7 @@
 
 
 
-  <div class="container-fluid p-5">
+  <div class="container-fluid p-5 maxw">
 	<div class="row">
 		<div class="col-md-6">
 			<div class="row">
@@ -51,7 +52,7 @@
                     <h1>Shrek</h1></br>
 				</div>
 			</div>
-            <div class="row">
+            <div class="row ">
             <div class="col-md-11  bg-black bg-opacity-25 p-3 ">
 			<div class="row">
                 <div class="col-md-6 border  text-left autoTamano  ">
@@ -64,7 +65,7 @@
 			</div>
         </br>
         
-			<div class="row">
+			<div class="row " >
 				<div class="col-md-10  text-left autoTamano2">
 
                     <ul class="list-group-horizontal d-flex flex-wrap horarios"> 
@@ -86,9 +87,9 @@
 		</div>
     </div></div>
 
-		<div class="col-md-6 bg-black bg-opacity-25 p-3" >
-			<div class="row  carta d-flex" >
-				<div class="col-md-12 ">
+		<div class="col-md-6 bg-black bg-opacity-25 p-3 tamBackground" >
+			<div class="row carta d-flex" >
+				<div class="col-md-12  tamBackground">
                    <h2>Descripción</h2>     
                    <b>Duración : </b> 92 minutos </br>
                    <b>País : </b> Estados Unidos </br>
@@ -103,9 +104,17 @@
 			</div>
 			<div class="row  carta d-flex">
 				<div class="col-md-12">
-                    <h2>Sinopsis</h2>
-                    Érase una vez un ogro verde llamado Shrek que vivía en un pantano muy lejano, feliz con sus baños de barro y su particular concepto de la higiene. Pero un buen día, su preciada soledad se ve interrumpida por la invasión de un grupo de molestos personajes salidos de cuentos clásicos.En la ciénaga aparecen de repente Blancanieves, el lobo feroz, los tres cerditos, el mago Merlín, las hadas de la Bella Durmiente, un Pinocho con la nariz cada vez más larga¿ todos ellos desterrados de su reino por el malvado lord Farquaad.Shrek decide salvar su hogar para conseguir que se vayan de su preciadísimo pantano, llegando a un acuerdo con Farquaad: debe rescatar a la princesa Fiona para que se despose con el bajito, feo y acomplejado Farquaad. En esta misión le acompaña un asno que pretende ser muy gracioso y que es capaz de hacer cualquier cosa para conseguir un amigo fiel, sobre todo si es un ogro verde. Todo menos cerrar la boca.Sólo se quedará sin habla cuando se encuentre delante del terrible dragón que tiene encerrada a la delicada princesa.
-				</div>
+        </br>
+        <h2>Sinopsis</h2>
+        
+          <label>Érase una vez un ogro verde llamado Shrek que  vivía en un pantano muy lejano, feliz con sus  baños de barro y su particular concepto de la higiene. Pero un buen día, su preciada soledad se ve interrumpida <span id="dots">...</span><span id="more">por la invasión de un grupo de molestos personajes salidos de cuentos clásicos. En la ciénaga aparecen de repente Blancanieves, el lobo feroz, los tres cerditos, el mago Merlín, las hadas de la Bella Durmiente, un Pinocho con la nariz cada vez más largaTodos ellos desterrados de su reino por el malvado lord Farquaad. Shrek decide salvar su hogar para conseguir que se vayan de su preciadísimo pantano, llegando a un acuerdo con Farquaad: debe rescatar a la princesa Fiona para que se despose con el bajito, feo y acomplejado Farquaad. En esta misión le acompaña un asno que pretende ser muy gracioso y que es capaz de hacer cualquier cosa para conseguir un amigo fiel, sobre todo si es un ogro verde. Todo menos cerrar la boca.Sólo se quedará sin habla cuando se encuentre delante del terrible dragón que tiene encerrada a la delicada princesa.
+            Mientras tanto en su castillo Farquaad habla con un espejo mágico. Este le dice que todavía no es un rey y que debe casarse con una princesa (para esto le presenta tres opciones; Cenicienta, Blanca Nieves y Fiona). Farquaad elige casarse con la princesa Fiona, que está encerrada en la torre de un castillo rodeado de lava y custodiado por un dragón, para no arriesgarse, organiza un torneo en el que el ganador obtiene el "privilegio" de rescatar a Fiona por él. Shrek y Asno llegan durante el torneo, y sin saber nada derrotan a los caballeros de Farquaad. Este los proclama campeones, y los obliga bajo amenaza de muerte a rescatar a la princesa Fiona, prometiendo echar a las criaturas de cuento de hadas del pantano de Shrek si este tiene éxito.
+            </label>
+          </span>
+        
+
+        <button onclick="myFunction()" id="myBtn" class ="bHora">Leer Mas</button>
+      </div>
 			</div>
 		</div>
 	</div>
