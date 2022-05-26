@@ -33,6 +33,7 @@ function less(tipo) {
                 }
                 break;
         }
+        document.getElementById("asientosSeleccionados").value = cantLibres - 1;
         document.getElementById("asientosLibres").value = cantLibres - 1;
     } else {
         alert("Deseleccione algún asiento");
