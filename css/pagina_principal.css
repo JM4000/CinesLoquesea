@@ -1,8 +1,9 @@
 .carta {
-    background-color: plum;
+    background-color: #3B339B;
     max-height: 480px;
     margin: 1%;
     width: 47%;
+    
 }
 
 @media screen and (max-width: 1080px) {
@@ -12,9 +13,13 @@
 }
 
 .informacion {
-    background-color: lightsalmon;
+    background-color: #F0A6BB;
     padding: 2%;
     max-width: 75%;
+}
+
+.fondo{
+    background-color: lightgray;
 }
 
 .slider-range {
