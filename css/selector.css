@@ -83,11 +83,13 @@
     margin-left: 30px;
 }
 
-.mCustom2{
-    margin-left: 3px;
+#mCustom2{
+    margin-right: 1.3cm;
 }
+
 
 .mVertical{
     margin-left: -1.5cm;
     margin-right: -1.5cm;
+    margin-top: 0.5cm;
 }
