@@ -26,6 +26,10 @@
     overflow-y: hidden;
 }
 
+.butacas{
+    margin: 0px;
+}
+
 #contenido{
     height: 20cm;
     min-width: 30cm;
@@ -71,4 +75,19 @@
 
 .butaca{
     vertical-align: middle;
+    margin: -10px;
+    margin-top: auto;
+}
+
+#mCustom1{
+    margin-left: 30px;
+}
+
+.mCustom2{
+    margin-left: 3px;
+}
+
+.mVertical{
+    margin-left: -1.5cm;
+    margin-right: -1.5cm;
 }
