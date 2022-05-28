@@ -105,3 +105,62 @@ function cambioDeModo() {
     });
   }
 }
+
+function cambioDeModo2() {
+  if (document.getElementById("flexSwitchCheckDefault").checked) {
+    const carta = document.getElementsByClassName("carta"); //listo
+    const carta2 = document.getElementsByClassName("carta2"); //listo
+    const carta3 = document.getElementsByClassName("carta3");//ñisto
+    const fondoGeneral = document.getElementsByClassName("fondoGris");
+    const fondos = document.getElementsByClassName("fondo");//creo que listo
+    const botones = document.getElementsByClassName("bHora"); //listo
+
+    Array.from(carta).forEach((element) => {
+      element.style.backgroundColor = "#eff9f0";
+    });
+    Array.from(carta2).forEach((element) => {
+      element.style.backgroundColor = "#eff9f0";
+    });
+    Array.from(carta3).forEach((element) => {
+      element.style.backgroundColor = "#eff9f0";
+    });
+    Array.from(fondoGeneral).forEach((element) => {
+      element.style.backgroundColor = "#fdd189";
+    });
+    Array.from(fondos).forEach((element) => {
+      element.style.backgroundColor = "#145c9e";
+    });
+    Array.from(botones).forEach((element) => {
+      element.style.backgroundColor = "#000000";
+      element.style.color = "#ffffff";
+    });
+  }
+  else {
+    const carta = document.getElementsByClassName("carta");
+    const carta2 = document.getElementsByClassName("carta2");
+    const carta3 = document.getElementsByClassName("carta3");
+    const fondoGeneral = document.getElementsByClassName("fondoGris");
+    const fondos = document.getElementsByClassName("fondo");
+    const botones = document.getElementsByClassName("bHora");
+
+    Array.from(carta).forEach((element) => {
+      element.style.backgroundColor = "#F0A6BB";
+    });
+    Array.from(carta2).forEach((element) => {
+      element.style.backgroundColor = "#F0A6BB";
+    });
+    Array.from(carta3).forEach((element) => {
+      element.style.backgroundColor = "#F0A6BB";
+    });
+    Array.from(fondoGeneral).forEach((element) => {
+      element.style.backgroundColor = "lightgray";
+    });
+    Array.from(fondos).forEach((element) => {
+      element.style.backgroundColor = "3B339B";
+    });
+    Array.from(botones).forEach((element) => {
+      element.style.backgroundColor = "lightgray";
+      element.style.color = "#000000";
+    });
+  }
+}
