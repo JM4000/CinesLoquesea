@@ -11,6 +11,8 @@ function less(tipo) {
                 if (val >= 1) {
                     document.getElementById("cantOne").value = val - 1;
                     document.getElementById("precioOne").value = pre - 8;
+                    document.getElementById("asientosSeleccionados").value = cantLibres - 1;
+                    document.getElementById("asientosLibres").value = cantLibres - 1;
                     substractTotal(8)
                 }
                 break;
@@ -20,6 +22,8 @@ function less(tipo) {
                 if (val >= 1) {
                     document.getElementById("cantTwo").value = val - 1;
                     document.getElementById("precioTwo").value = pre - 6;
+                    document.getElementById("asientosSeleccionados").value = cantLibres - 1;
+                    document.getElementById("asientosLibres").value = cantLibres - 1;
                     substractTotal(6)
                 }
                 break;
@@ -29,12 +33,12 @@ function less(tipo) {
                 if (val >= 1) {
                     document.getElementById("cantThree").value = val - 1;
                     document.getElementById("precioThree").value = pre - 15;
+                    document.getElementById("asientosSeleccionados").value = cantLibres - 1;
+                    document.getElementById("asientosLibres").value = cantLibres - 1;
                     substractTotal(15)
                 }
                 break;
         }
-        document.getElementById("asientosSeleccionados").value = cantLibres - 1;
-        document.getElementById("asientosLibres").value = cantLibres - 1;
     } else {
         alert("Deseleccione algún asiento");
     }
@@ -88,7 +92,7 @@ function addTotal(cant) {
 function reservar(id) {
     var val = document.getElementById("asientosLibres").value;
     var valor = document.getElementById(id).value;
-    if(valor == undefined) {
+    if (valor == undefined) {
         document.getElementById(id).value = 0;
     }
     if (document.getElementById(id).value == 0 && val > 0) {
@@ -130,7 +134,7 @@ function closeForm() {
     document.getElementById("background").style.display = "none";
 }
 
-function comprar(){
+function comprar() {
     closeForm();
     alert("Gracias por su compra");
     window.location.href = './index.html';
