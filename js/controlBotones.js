@@ -87,6 +87,10 @@ function addTotal(cant) {
 
 function reservar(id) {
     var val = document.getElementById("asientosLibres").value;
+    var valor = document.getElementById(id).value;
+    if(valor == undefined) {
+        document.getElementById(id).value = 0;
+    }
     if (document.getElementById(id).value == 0 && val > 0) {
         document.getElementById(id).src = "images/sofa verde.svg";
         document.getElementById(id).value = 1;
