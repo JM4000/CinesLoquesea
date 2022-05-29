@@ -94,3 +94,7 @@
     margin-right: -1.5cm;
     margin-top: 0.5cm;
 }
+
+body{
+    min-width: 512px;
+}
