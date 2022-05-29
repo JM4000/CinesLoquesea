@@ -135,8 +135,18 @@ function closeForm() {
 }
 
 function comprar() {
-    closeForm();
-    alert("Gracias por su compra");
-    window.location.href = './index.html';
+    var tarjeta = document.getElementById("tarjeta").value;
+    var f1 = document.getElementById("f1").value;
+    var f2 = document.getElementById("f2").value;
+    var cs = document.getElementById("cs").value;
+    var email = document.getElementById("email").value;
+    if (tarjeta == "" || f1 == "" || f2 == "" || cs == "" || email == ""){
+        alert("Rellene todos los campos");
+    } else {
+        closeForm();
+        alert("Gracias por su compra");
+        window.location.href = './index.html';
+    }
+    
 }
 
