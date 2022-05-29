@@ -46,9 +46,9 @@
             <div class="container d-flex col-lg-8 col-sm-12" id="contadorEntradas">
                 <div class="col-4">
                     Seleccione sus entradas: <br><br>
-                    &emsp;&emsp;&emsp;&emsp;Adulto:<br>
-                    &emsp;&emsp;&emsp;&emsp; Niño:<br>
-                    &emsp;&emsp;Adulto + Menú:<br><br>
+                    &emsp;&emsp;&emsp;&emsp;<label for="cantOne">Adulto</label><br>
+                    &emsp;&emsp;&emsp;&emsp;<label for="cantTwo">Niño:</label><br>
+                    &emsp;&emsp;<label for="cantThree">Adulto + Menú:</label><br><br>
                     <label for="asientosSeleccionados">Total entradas:
                         <input class="cant" type="number" size="2" style="text-align: center;" value="0"
                             name="asientosSeleccionados" id="asientosSeleccionados" readonly>
@@ -59,15 +59,15 @@
                     &nbsp;&nbsp;&nbsp;Cantidad: &emsp;&emsp;Precio: &emsp;&emsp;Subtotal: <br>
                     <input type="image" src="images/arrow-left-circle.svg" name="leftOne" id="leftOne"
                         onclick="less(1)" alt="Quitar 1 entrada de adulto"/>
-                    <label hidden for="cantOne"></label>
                     <input class="cant" type="number" value="0" id="cantOne" disabled />
                     <input type="image" src="images/arrow-right-circle.svg" name="rightOne" id="rightOne"
                         onclick="more(1)" alt="Añadir 1 entrada de adulto" />
                     &emsp;&emsp;&nbsp;8&euro;
                     &emsp;&emsp;&emsp;&nbsp;
-                    <label hidden for="precioOne"></label>
+                    
                     <input class="precio" type="number" size="1" value="0"
                         style="text-align: center;" id="precioOne" disabled /> &euro;
+                        <label for="precioOne"></label>
                     <br>
 
                     <input type="image" src="images/arrow-left-circle.svg" name="leftTwo" id="leftTwo"
@@ -78,9 +78,10 @@
                         onclick="more(2)" alt="Añadir 1 entrada de niño" />
                     &emsp;&emsp;&nbsp;6&euro;
                     &emsp;&emsp;&emsp;&nbsp;
-                    <label hidden for="precioTwo"></label>
+                    
                     <input class="precio" type="number" size="1" value="0"
                         style="text-align: center;" id="precioTwo" disabled /> &euro;
+                        <label hidden for="precioTwo"></label>
                     <br>
 
                     <input type="image" src="images/arrow-left-circle.svg" name="leftThree" id="leftThree"
@@ -91,20 +92,23 @@
                         onclick="more(3)" alt="Añadir 1 entrada de adulto + menú" />
                     &emsp;&emsp;15&euro;
                     &emsp;&emsp;&emsp;
-                    <label hidden for="cantThree"></label>
+                    
                     <input class="precio" type="number" value="0" style="text-align: center;"
                         id="precioThree" disabled /> &euro;
+                        <label hidden for="precioThree"></label>
                     <br>
                 </div>
             </div>
             <div class="list-group-item bg-black bg-opacity-25 col-lg-2 col-sm-4" id="pagoContainer">
                 <div class="row" id="plum">
                     <div style="font-size: x-large">
-                        Total:
+                        <label for="pTotal">Total:</label>
+                        
                     </div>
                 </div>
                 <div class="row" style="font-size: 30px;">
                     <div id="ratio">
+                        
                         <input id="pTotal" type="number" value="0" disabled name="Precio total"/>
                         &euro;
                     </div>
@@ -120,7 +124,7 @@
                 <p>
                     Para cambiar tu lugar asignado da click en el butaca deseada. <br>
                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Su butaca&emsp; Disponible&emsp; Ocupada &emsp;
-                    Asientos Disponibles: <input class="cant" type="number" id="asientosLibres"
+                    <label for="asientosLibres">Asientos Disponibles: </label><input class="cant" type="number" id="asientosLibres"
                         style="text-align: center;" size="2" value="0" readonly name="Asientos libres"/><br>
                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<img src="images/sofa verde.svg"
                         height="60px" alt="Asiento seleccionado">&emsp;&emsp;&nbsp;<img src="images/sofa.svg" height="60px" alt="Asiento disponible">&emsp;&emsp;<img
