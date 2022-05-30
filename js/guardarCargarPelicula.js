@@ -1,7 +1,4 @@
-function guardarPeliculaYRedirigir(pelicula, direccion){
-    if (typeof(Storage) !== "undefined") {
-        localStorage.setItem("pelicula", pelicula);
-    }
+function redirigir(direccion){
     window.location.replace(direccion + ".html");
 }
 
