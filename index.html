@@ -15,6 +15,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
   <script src="js/rangoHora.js"></script>
+  <script src="js/guardarCargarPelicula.js"></script>
 
   <title>Cines Loquesea</title>
 </head>
@@ -69,7 +70,7 @@
       <div class="container fondo p-3 rounded-3">
         <ul class="list-group-horizontal-xxl d-flex flex-wrap">
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/Shrek.jpg" alt="Portada de: Shreck">
+            <input type="image" class="imagen" src="images/Shrek.jpg" alt="Portada de: Shreck" onclick="redirigir('informacionSHREK')">
             <div class="container informacion rounded-3">
               <h1>Shrek</h1>
               <p>
@@ -77,17 +78,17 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
           </li>
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/batmanvssuperman.jpg" alt="Portada de: Batman VS Superman">
+            <input type="image" class="imagen" src="images/batmanvssuperman.jpg" alt="Portada de: Batman VS Superman" onclick="redirigir('informacionBATMAN')">
             <div class="container informacion rounded-3">
               <h1>Batman VS Superman</h1>
               <p>
@@ -95,17 +96,17 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
           </li>
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/killbill.jpg" alt="Portada de: Kill Bill">
+            <input type="image" class="imagen" src="images/killbill.jpg" alt="Portada de: Kill Bill" onclick="redirigir('informacionKILLBILL')">
             <div class="container informacion rounded-3">
               <h1>Kill Bill</h1>
               <p>
@@ -113,17 +114,17 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
           </li>
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/knivesOutjpg.jpg" alt="Portada de: Puñales por la Espalda">
+            <input type="image" class="imagen" src="images/knivesOutjpg.jpg" alt="Portada de: Puñales por la Espalda" onclick="redirigir('informacionKnivesOut')">
             <div class="container informacion rounded-3">
               <h1>Puñales por la espalda </h1>
               <p>
@@ -131,17 +132,17 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
           </li>
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/taxidriver.jpg" alt="Portada de: Taxi Driver">
+            <input type="image" class="imagen" src="images/taxidriver.jpg" alt="Portada de: Taxi Driver" onclick="redirigir('informacionTAXI')">
             <div class="container informacion rounded-3">
               <h1>Taki Driver</h1>
               <p>
@@ -149,17 +150,17 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
           </li>
           <li class="list-group-item carta d-flex rounded-3">
-            <input type="image" class="imagen" src="images/viento.jpg" alt="Portada de: Lo que el Viento se Llevó">
+            <input type="image" class="imagen" src="images/viento.jpg" alt="Portada de: Lo que el Viento se Llevó" onclick="redirigir('informacionVIENTO')">
             <div class="container informacion rounded-3">
               <h1>Lo que el viento se llevó</h1>
               <p>
@@ -167,11 +168,11 @@
                 2D Español<br>
                 <b>Horarios:</b><br>
               <div class="list-group-horizontal d-flex flex-wrap horarios">
-                <button class="list-group-item bHora">09:00</button>
-                <button class="list-group-item bHora">15:15</button>
-                <button class="list-group-item bHora">18:45</button>
-                <button class="list-group-item bHora">22:30</button>
-                <button class="list-group-item bHora">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
+                <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
               </div>
               </p>
             </div>
