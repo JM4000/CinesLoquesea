@@ -68,6 +68,7 @@ p {
     vertical-align: middle;
     margin-bottom: 1%;
     padding-top: 1%;
+    max-width: 75%;
 }
 
 .textoSelector {
