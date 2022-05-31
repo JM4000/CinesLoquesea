@@ -19,7 +19,7 @@
   <script src="js/leerMas.js"></script>
   <script src="js/guardarCargarPelicula.js"></script>
 
-  <title>Lo que el viento se llevó</title>
+  <title>LO QUE EL VIENTO SE LLEVÓ</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <div class="container-flex d-grid gap-3 mainContent">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-auto me-md-auto text-dark text-decoration-none">
-          <img class="bi me-2" src="images/logo.svg" width="40" height="32"></img>
+          <img class="bi me-2" src="images/logo.svg" width="40" height="32" alt="logo"></img>
           <span class="fs-4 ">Cartelera</span>
         </a>
 
@@ -53,14 +53,14 @@
 
   <div class="container-fluid p-5 maxw">
     <div class="row">
-      <div class="col-md-6">.
+      <div class="col-md-6">
         <div class="row">
-                  <div class="col-md-12"><input type="image" class="imagen" id="imagen" src="images/viento.jpg"></div> 
+                  <div class="col-md-12"><input type="image" class="imagen" id="imagen" src="images/viento.jpg" alt="Shrek"></div> 
         </div>
 
         <div class="row">
           <div class="col-md-12">
-            <h1>Lo que el viento se llevó</h1></br>
+            <h1 style="margin-left: -20%;">Lo que el viento se llevó</h1></br>
           </div>
         </div>
 
@@ -69,7 +69,12 @@
             <div class="row fondo">
               <div class="row">
                 <div class="col-md-12 border   carta3 ">
-                  <label for="fecha"><font style=" font-weight:bold;" >Sesión:</font> </label>
+                
+    
+                  
+
+
+                  <label for="fecha" style="font-weight:bold; "> Sesión:    </label>
                   <input type="date" style="font-weight:bold; " id="fecha" name="fecha" value="2022-01-01" min="2022-01-01" max="2022-12-31">
                   <span><button id="goToDate">-></button></span>
                   </br>     
@@ -77,16 +82,18 @@
               </div>        
               <div class="row " >
                 <div class="col-md-12  text-left carta2">
-                  <ul class="list-group-horizontal d-flex flex-wrap horarios"> 
-                    <h5 style="text-align: left;">Horarios: </h5> <ul></ul>
-            
+               
+
+                    <div class="list-group-horizontal d-flex flex-wrap horarios">
+                      <h5>Horarios: &nbsp;&nbsp; </h5> <br/>
                     <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">09:00</button>
                     <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">15:15</button>
                     <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">18:45</button>
                     <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">22:30</button>
                     <button class="list-group-item bHora" onclick="redirigir('selector_entradas')">23:30</button>
-                  </ul>  
-                  <label class="tamanyopequenyo" ><b>*Haz click en el horario deseado para comprar su entrada.</b></label> </br></br>
+                    </div>
+                  </br>
+                  <b class="tamanyopequenyo">*Haz click en el horario deseado para comprar su entrada.</b> </br></br>
                   </div>
                 </div>
               </div>
@@ -115,10 +122,9 @@
               <div class="col-md-12">
                 </br>
                 <h2>Sinopsis</h2>
-                <label>Mediados del siglo XIX. Scarlett O’Hara, una bella joven caprichosa y pasional, vive en una de las grandes mansiones del sur de los Estados Unidos <span id="dots">...</span><span id="more">rodeada de esclavos negros y todo tipo de lujos. Lo único que no puede conseguir es a Ashley Wilkes, el hombre del que está enamorada y que, a su vez, está comprometido en matrimonio con su prima, Melanie Hamilton, una dulce y cariñosa mujer incapaz de odiar.
-
-                    La Guerra de Secesión está a punto de estallar y los jóvenes sureños  muestran su entusiasmo por entrar en combate.  No así Rhett Butler, un hombre atractivo que no tiene más interés que su propio beneficio. Butler se enamora de Scarlett durante una fiesta en los Doce Robles, la finca de Ashley,  y no cesará en su empeño de lograr su amor durante toda la película, a pesar de que Scarlett seguirá obsesionada con Ashley a pesar del paso de los años y de varios matrimonios por interés.
-                </label>  </span>
+                  Mediados del siglo XIX. Scarlett O’Hara, una bella joven caprichosa y pasional, vive en una de las grandes mansiones del sur de los Estados Unidos <span id="dots">...</span><span id="more">rodeada de esclavos negros y todo tipo de lujos. Lo único que no puede conseguir es a Ashley Wilkes, el hombre del que está enamorada y que, a su vez, está comprometido en matrimonio con su prima, Melanie Hamilton, una dulce y cariñosa mujer incapaz de odiar.
+                  La Guerra de Secesión está a punto de estallar y los jóvenes sureños  muestran su entusiasmo por entrar en combate.  No así Rhett Butler, un hombre atractivo que no tiene más interés que su propio beneficio. Butler se enamora de Scarlett durante una fiesta en los Doce Robles, la finca de Ashley,  y no cesará en su empeño de lograr su amor durante toda la película, a pesar de que Scarlett seguirá obsesionada con Ashley a pesar del paso de los años y de varios matrimonios por interés.
+               </span>
                 <button onclick="myFunction()" id="myBtn" class ="bHora">Leer Mas</button>
               </div>
             </div>
@@ -128,8 +134,6 @@
       </div>
     </div>
   </div>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
